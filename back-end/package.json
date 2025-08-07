@@ -1,0 +1,14 @@
+{
+  "name": "ia-api-response",
+  "version": "1.0.0",
+  "description": "Uma api para o projeto o meu projeto bcak-end, para integrar a IA",
+  "main": "server.ts",
+  "scripts": {
+    "start": "nodemon src/server.ts"
+  },
+  "author": "Vicente Junior",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
