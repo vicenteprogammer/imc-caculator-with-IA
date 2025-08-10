@@ -14,3 +14,13 @@ __Uma calculadora de IMC diferente das outras, além de calcular o IMC, ela colo
 ##### __Uma simples arquitetura apenas integrar a IA ao projeto.__
 
 
+### Endpoints:
+ __/response__ -> **METHOD: POST**
+
+### Front-end
+__O front-end é bem simples com protótipo produzido no figma__
+
+__Protótipo front-end__: https://www.figma.com/design/nEff11rWaTEEZfb7b5GUx6/Untitled?node-id=8-2&t=swfVjmZvIKC3ebiP-1
+
+
+
