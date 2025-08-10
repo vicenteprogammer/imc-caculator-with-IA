@@ -1,11 +1,7 @@
 import { Router } from "express";
+import controllerIA from "../controllers/controller-ia";
 const routeIA = Router();
 
-routeIA.post('/response', (req, res)=>{
-    const body = JSON.stringify(req.body)
-    console.log(JSON.parse(body))
-    res.status(200).send('Solicitação Recebida com sucesso')
-})
-
+routeIA.post('/response', controllerIA);
 
 export default routeIA
