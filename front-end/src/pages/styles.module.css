@@ -1,18 +1,38 @@
+
+
+
+
 .imcBox{
-    background-color: aqua;
+    background-color: #221C31;
+    border-radius: 5px;
     align-items: center;
     display: flex;
-    padding: 20px;
+    padding: 50px;
     flex-direction: column;
     color: brown;
     width: 20%;
-    height: 200px;
+    height: 150px;
 }
 .input{
     width: 60%;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    height: 80px;
+    border-radius: 5px;
+    border: none;
 }
 
 .btn{
-    width: 50%;
+    width: 40%;
+    height: 90px;
+    border-radius: 5px;
+    border: none;
+    background-color: #CC9696;
+    color: #ffffffff;
+}
+
+.labelInput{
+    margin-right: 130px;
+    font-family: 'Overpass Mono';
+    font-size: 15px;
+    color: #ffffffff;
 }
