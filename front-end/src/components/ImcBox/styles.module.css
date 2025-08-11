@@ -1,0 +1,45 @@
+
+
+
+
+.imcBox{
+    background-color: #1c375f;
+    border-radius: 10px;
+    display: flex;
+    padding: 50px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: brown;
+    width: 20%;
+    height: 150px;
+    margin-top: 15%;
+    margin-left: 15%;
+}
+.input{
+    width: 60%;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+    padding: 8px;
+}
+
+.btn{
+    width: 40%;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    background-color: #CC9696;
+    color: #ffffffff;
+}
+
+.labelInput{
+    margin-right: 130px;
+    font-family: 'Overpass Mono';
+    font-size: 15px;
+    color: #ffffffff;
+}
+
+.subtitle{
+    color: white;
+}
