@@ -1,9 +1,13 @@
-
+import style from './styles.module.css'
 
 const ListRecomend = () =>{
     return(
         <div>
-            <ul>
+            <ul className={style.listStyle}>
+                <li>Run</li>
+                <li>Run</li>
+                <li>Run</li>
+                <li>Run</li>
                 <li>Run</li>
             </ul>
         </div>
