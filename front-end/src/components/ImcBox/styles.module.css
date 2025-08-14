@@ -13,8 +13,7 @@
     color: brown;
     width: 20%;
     height: 150px;
-    margin-top: 15%;
-    margin-left: 15%;
+    padding: 60px;
 }
 .input{
     width: 60%;
@@ -38,6 +37,7 @@
     font-family: 'Overpass Mono';
     font-size: 15px;
     color: #ffffffff;
+    
 }
 
 .subtitle{

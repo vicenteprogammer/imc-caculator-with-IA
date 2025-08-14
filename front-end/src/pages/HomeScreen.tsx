@@ -4,7 +4,7 @@ import styles  from  './styles.module.css'
 
 const HomeScreen = () =>{
    return(
-    <><ImcBox /><ResultBox /></>
+    <><ImcBox /></>
    )
 }
 
