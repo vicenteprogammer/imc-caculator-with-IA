@@ -3,8 +3,8 @@
 
 
 .imcBox{
-    background-color: #1c375f;
-    border-radius: 10px;
+    background-color: #4169E1;
+    border-radius: 5px;
     display: flex;
     padding: 50px;
     flex-direction: column;
@@ -13,7 +13,6 @@
     color: brown;
     width: 20%;
     height: 150px;
-    padding: 60px;
 }
 .input{
     width: 60%;
@@ -28,12 +27,12 @@
     padding: 5px;
     border-radius: 5px;
     border: none;
-    background-color: #CC9696;
+    background-color: #3c3a3c;
     color: #ffffffff;
 }
 
 .labelInput{
-    margin-right: 130px;
+    margin-right: 120px;
     font-family: 'Overpass Mono';
     font-size: 15px;
     color: #ffffffff;
