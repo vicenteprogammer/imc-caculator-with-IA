@@ -6,13 +6,13 @@
     background-color: #4169E1;
     border-radius: 5px;
     display: flex;
-    padding: 50px;
+    padding: 60px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     color: brown;
-    width: 20%;
-    height: 150px;
+    width: 300px;
+    height: 200px;
 }
 .input{
     width: 60%;
@@ -23,8 +23,9 @@
 }
 
 .btn{
-    width: 40%;
+    width: 30%;
     padding: 5px;
+    height: 30px;
     border-radius: 5px;
     border: none;
     background-color: #3c3a3c;
@@ -39,6 +40,20 @@
     
 }
 
+.btnDiv{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
 .subtitle{
     color: white;
+    margin-top: 20px;
+    font-style: oblique;
+    font-size: large;
+}
+.title{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
 }
