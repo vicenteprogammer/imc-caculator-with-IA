@@ -4,15 +4,14 @@
 
 .imcBox{
     background-color: #4169E1;
-    border-radius: 5px;
+    border-radius: 10px;
     display: flex;
     padding: 60px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: brown;
-    width: 300px;
-    height: 200px;
+    width:250px;
+    height: 5%;
 }
 .input{
     width: 60%;
@@ -30,6 +29,18 @@
     border: none;
     background-color: #3c3a3c;
     color: #ffffffff;
+    margin-top: 10px;
+}
+
+.btnIa{
+    width: 40%;
+    padding: 5px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    background-color: #3c3a3c;
+    color: #ffffffff;
+    margin-top: 10px;
 }
 
 .labelInput{
@@ -50,7 +61,7 @@
     color: white;
     margin-top: 20px;
     font-style: oblique;
-    font-size: large;
+    font-size:20px;
 }
 .title{
     color: white;
