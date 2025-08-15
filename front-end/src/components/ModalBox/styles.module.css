@@ -1,0 +1,37 @@
+.boxModal{
+    background-color: rgb(34, 34, 40) ;
+    width: 50%;
+    z-index: 1;
+    margin-right: 300px;
+    border: 3px solid rgb(65, 64, 64);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.modalTitle{
+    background-color: #4169E1 ;
+    height: 20px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 97%;
+    border-radius: 2px;
+}
+
+.textStyle{
+    color: white;
+    font-size: 20px;
+}
+
+.btn{
+    background-color: #4169E1;
+    border: none;
+    height: 25px;
+    width: 50px;
+    border-radius: 3px;
+    color: white;
+}
