@@ -11,8 +11,10 @@ const HomeScreen = () =>{
       </div>
       <div>
       <ImcBox />
+      <div>
+         <ModalBox/>
       </div>
-      <ModalBox/>
+      </div>
    </div>
    )
 }

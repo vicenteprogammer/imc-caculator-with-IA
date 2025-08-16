@@ -1,6 +1,9 @@
+import { useState } from 'react'
 import styles from './styles.module.css'
 
 const ModalBox = () =>{
+
+    const [modal, setModal] = useState(false)
     return( 
     <div>
         <div className={styles.boxModal} >
