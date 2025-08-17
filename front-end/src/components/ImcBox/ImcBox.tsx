@@ -1,8 +1,15 @@
 
 import  { useState } from 'react'
 import styles from './styles.module.css'
+import ModalBox from '../ModalBox/ModalBox'
+import { DiVim } from 'react-icons/di'
 const ImcBox = () =>{
     const [imcClick, setImcClick] = useState(false)
+    const [openModal, setOpenModal] = useState(false);
+
+    const open = () => {
+        setOpenModal(!openModal)
+    }
 
     const clickCalc = () =>{
         setImcClick((prevClick) => prevClick = true)
@@ -24,7 +31,9 @@ const ImcBox = () =>{
          <button className={styles.btn} onClick={resetCalc}>Reset</button>
         </div>
 
-        {imcClick && <><button className={styles.btnIa}>IA Suggestion</button><p className={styles.subtitle}>Seu imc é 20.10</p></>}
+        {imcClick && <><button className={styles.btnIa} onClick={open} >IA Suggestion</button><p className={styles.subtitle}>Seu imc é 20.10</p></>}
+
+        {openModal && <div><ModalBox sug={true}/></div>}
     </div>
      </div>
     )

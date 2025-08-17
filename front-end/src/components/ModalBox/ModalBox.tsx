@@ -1,8 +1,12 @@
 import { useState } from 'react'
 import styles from './styles.module.css'
 
-const ModalBox = () =>{
-    const [modal, setModal] = useState(true)
+type Props = {
+    sug : boolean
+}
+
+const ModalBox = ({sug}: Props) =>{
+    const [modal, setModal] = useState(sug)
 
     const closeModal = () =>{
         setModal(!modal)
