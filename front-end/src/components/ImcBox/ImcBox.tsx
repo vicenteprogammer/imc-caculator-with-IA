@@ -1,5 +1,5 @@
 
-import React, { useState } from 'react'
+import  { useState } from 'react'
 import styles from './styles.module.css'
 const ImcBox = () =>{
     const [imcClick, setImcClick] = useState(false)
@@ -23,7 +23,7 @@ const ImcBox = () =>{
          <button className={styles.btn} onClick={clickCalc} >Calculate</button>
          <button className={styles.btn} onClick={resetCalc}>Reset</button>
         </div>
-        
+
         {imcClick && <><button className={styles.btnIa}>IA Suggestion</button><p className={styles.subtitle}>Seu imc é 20.10</p></>}
     </div>
      </div>
