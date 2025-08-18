@@ -12,7 +12,7 @@ const HomeScreen = () =>{
       <div>
       <ImcBox />
       <div>
-         <ModalBox sug={true}/>
+         <ModalBox sug={false}/>
       </div>
       </div>
    </div>
