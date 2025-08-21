@@ -12,6 +12,7 @@
   "dependencies": {
     "-": "^0.0.1",
     "@google/genai": "^1.13.0",
+    "cors": "^2.8.5",
     "D": "^1.0.0",
     "express": "^5.1.0",
     "tsup": "^8.5.0",
@@ -19,6 +20,7 @@
     "typescript": "^5.9.2"
   },
   "devDependencies": {
+    "@types/cors": "^2.8.19",
     "@types/express": "^5.0.3"
   }
 }
