@@ -22,9 +22,24 @@ const ImcBox = () =>{
         setImcClick((prevClick) => prevClick = true)
 
         const imc = calc(Number(heightValue),Number(weightValue))
+        if(imc === undefined || Number.isNaN(imc)){
+            setImcValue(0)
+        }else{
+            setImcValue(imc)
+        }
 
-        setImcValue(imc)
+    }
 
+    const res = ()=>{
+        if(imcValue !== 0){
+            return(
+                <><button className={styles.btnIa} onClick={open}>IA Suggestion</button><p className={styles.subtitle}> Seu imc é : {imcValue.toFixed(2)}</p></>
+            )
+        }else{
+            return(
+                <p className={styles.subtitle} >Imc inválido, valores errados ou vazios</p>
+            )
+        }
     }
 
     const resetCalc = () =>{
@@ -51,7 +66,7 @@ const ImcBox = () =>{
          <button className={styles.btn} onClick={resetCalc}>Reset</button>
         </div>
 
-        {imcClick && <><button className={styles.btnIa} onClick={open} >IA Suggestion</button><p className={styles.subtitle}>Seu imc é {imcValue.toFixed(2)}</p></>}
+        {imcClick && <>{res()}</>}
         {openModal && <div><ModalBox sug={true}/></div>}
     </div>
      </div>
