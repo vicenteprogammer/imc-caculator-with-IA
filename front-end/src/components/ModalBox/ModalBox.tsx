@@ -1,16 +1,19 @@
 import { useState } from 'react'
 import styles from './styles.module.css'
+import type { SuggModel } from '../../model/suggModel'
 
 type Props = {
-    sug : boolean
+    sug : boolean,
+    iaResponse: string | SuggModel
 }
 
-const ModalBox = ({sug}: Props) =>{
+const ModalBox = ({sug, iaResponse}: Props) =>{
     const [modal, setModal] = useState(sug)
 
     const closeModal = () =>{
         setModal(!modal)
     }
+
 
     if(modal){
      return(
@@ -19,7 +22,9 @@ const ModalBox = ({sug}: Props) =>{
             <div className={styles.modalTitle} >
                 <p className= {styles.textStyle} >IA Suggestion</p>
             </div>
-            <p className= {styles.textStyle} >Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa alias minima reiciendis obcaecati, ut illo, quia cupiditate ipsum nisi eligendi exercitationem. Eligendi harum delectus sed veniam. Obcaecati explicabo dolores maxime.</p>
+            <p className={styles.textStyle}>
+                {typeof iaResponse === 'string' ? iaResponse : JSON.stringify(iaResponse)}
+            </p>
             <div>
                 <button className={styles.btn} onClick={closeModal} >Close</button>
             </div>

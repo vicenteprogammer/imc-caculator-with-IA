@@ -3,7 +3,8 @@ import  { useState } from 'react'
 import styles from './styles.module.css'
 import ModalBox from '../ModalBox/ModalBox'
 import { calc } from '../../service/calc-imc'
-import { fetchSugg } from '../../api/getSugg'
+import type { SuggModel } from '../../model/suggModel'
+import { loadData } from './actions'
 const ImcBox = () =>{
     const [imcClick, setImcClick] = useState(false)
     const [openModal, setOpenModal] = useState(false);
@@ -31,11 +32,6 @@ const ImcBox = () =>{
 
     }
 
-    const apiText = async() =>{
-        const response = await fetchSugg(30)
-        console.log(response)
-    }
-
     const res = ()=>{
         if(imcValue !== 0){
             return(
@@ -52,6 +48,14 @@ const ImcBox = () =>{
         setImcClick((prevClick)=> prevClick = false)
         setWeightValue('')
         setheightValue('')
+    }
+
+    const [iaResponse, setIaResponse] = useState<SuggModel | ''>('');
+
+    const apiText = async () =>{
+        const response = await loadData(30);
+        setIaResponse(response ?? '');
+        console.log(iaResponse)
     }
 
 
@@ -73,7 +77,7 @@ const ImcBox = () =>{
         </div>
 
         {imcClick && <>{res()}</>}
-        {openModal && <div><ModalBox sug={true}/></div>}
+        {openModal && <div><ModalBox sug={true} iaResponse={iaResponse}/></div>}
     </div>
      </div>
     )
