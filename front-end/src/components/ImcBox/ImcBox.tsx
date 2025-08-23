@@ -3,6 +3,7 @@ import  { useState } from 'react'
 import styles from './styles.module.css'
 import ModalBox from '../ModalBox/ModalBox'
 import { calc } from '../../service/calc-imc'
+import { fetchSugg } from '../../api/getSugg'
 const ImcBox = () =>{
     const [imcClick, setImcClick] = useState(false)
     const [openModal, setOpenModal] = useState(false);
@@ -30,10 +31,15 @@ const ImcBox = () =>{
 
     }
 
+    const apiText = async() =>{
+        const response = await fetchSugg(30)
+        console.log(response)
+    }
+
     const res = ()=>{
         if(imcValue !== 0){
             return(
-                <><button className={styles.btnIa} onClick={open}>IA Suggestion</button><p className={styles.subtitle}> Seu imc é : {imcValue.toFixed(2)}</p></>
+                <><button className={styles.btnIa} onClick={apiText}>IA Suggestion</button><p className={styles.subtitle}> Seu imc é : {imcValue.toFixed(2)}</p></>
             )
         }else{
             return(
